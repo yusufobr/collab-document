@@ -1,0 +1,30 @@
+.container .ql-editor {
+  height: 10in ;
+  padding: 4%;
+  margin: auto;
+}
+
+.container .ql-toolbar.ql-snow {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  z-index: 1;
+}
+
+tr.loading td {
+  position: relative;
+  animation: loading 1.5s infinite ease-in-out;
+}
+
+@keyframes loading {
+  0% {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
