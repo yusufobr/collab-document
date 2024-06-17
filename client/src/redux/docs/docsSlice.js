@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const URL = "http://localhost:3000/api/document";
+const URL = "https://collab-doc-editing-0f228492f9d4.herokuapp.com/api/document";
 
 const initialState = {
   docs: [],

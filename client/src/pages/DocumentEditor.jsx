@@ -19,7 +19,7 @@ const DocumentEditor = () => {
 
   // Connect to socket
   useEffect(() => {
-    const s = io("http://localhost:3000");
+    const s = io("https://collab-doc-editing-0f228492f9d4.herokuapp.com/");
     setSocket(s);
 
     return () => {
