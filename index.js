@@ -8,8 +8,9 @@ const bodyParser = require("body-parser");
 require("dotenv").config();
 const Document = require("./models/document.model.js");
 
+// initialize constants
 const PORT = process.env.PORT || 3000;
-const ORIGIN = "http://localhost:5173";
+const ORIGIN = "https://loquacious-kitsune-eee948.netlify.app/";
 
 const app = express();
 
