@@ -10,7 +10,7 @@ const Document = require("./models/document.model.js");
 
 // initialize constants
 const PORT = process.env.PORT || 3000;
-const ORIGIN = "https://loquacious-kitsune-eee948.netlify.app/";
+const ORIGIN = "https://loquacious-kitsune-eee948.netlify.app";
 
 const app = express();
 
@@ -18,10 +18,7 @@ const app = express();
 connectDB();
 
 // Middlewares
-app.use(cors({
-  origin: ORIGIN,
-  methods: ["GET", "POST"],
-}));
+app.use(cors());
 app.use(bodyParser.json());
 
 // Routes
