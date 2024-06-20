@@ -18,7 +18,10 @@ const app = express();
 connectDB();
 
 // Middlewares
-app.use(cors());
+app.use(cors({
+  origin: ORIGIN,
+  methods: ["GET", "POST"],
+}));
 app.use(bodyParser.json());
 
 // Routes
