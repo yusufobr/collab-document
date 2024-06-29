@@ -23,20 +23,23 @@ const handleDelete = async (id) => {
   return (
     <>
     <Header />
-    <div className="container max-w-screen-xl mx-auto p-4 pb-8">
-      <div className="grid grid-cols-4 gap-4 p-2">
-        <div className="col-span-1 flex flex-col gap-8 bg-gray-100 px-4 py-8 pb-16 shadow-md rounded-md border">
-          <h2 className="px-2">Create New :</h2>
-          <div
-            onClick={() => document.location.replace("/new")}
-            className="flex flex-col justify-between items-center p-3 rounded-md border border-gray-300 text-gray-300 cursor-pointer hover:text-gray-400"
-          >
-            <HiOutlineDocumentAdd size={120} />
+    <div className="container max-w-screen-xl mx-auto p-2 md:p-4 md:pb-8">
+      <div className="flex flex-col md:grid md:grid-cols-4 gap-4 p-2">
+        <div className="col-span-1">
+          <div className="flex flex-col gap-8 bg-gray-100 px-4 py-8 shadow-md rounded-md border">
+            <h2 className="px-2">Create New :</h2>
+            <div
+              onClick={() => document.location.replace("/new")}
+              className="flex flex-col justify-between items-center p-3 rounded-md border border-gray-300 text-gray-300 cursor-pointer hover:text-gray-400"
+            >
+              <HiOutlineDocumentAdd size={120} />
+            </div>
           </div>
+
         </div>
-        <div className="col-span-3 flex flex-col gap-4 bg-gray-100 px-4 py-8 pb-16 shadow-md rounded-md border">
+        <div className="col-span-3 flex flex-col gap-4 bg-gray-100 px-2 md:px-4 py-8 pb-16 shadow-md rounded-md border">
           <h2 className="px-2">Last Documents :</h2>
-          <div className="p-3 rounded-md border border-gray-300">
+          <div className="p-3 rounded-md border border-gray-300 overflow-auto">
             <table className="min-w-full text-left text-sm font-light">
               <thead className="border-b font-medium dark:border-neutral-500">
                 <tr>
